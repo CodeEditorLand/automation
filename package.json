@@ -30,7 +30,7 @@
 		"@actions/github": "6.0.0"
 	},
 	"devDependencies": {
-		"@playform/build": "0.0.7",
+		"@playform/build": "0.0.8",
 		"@playform/document": "0.0.6"
 	},
 	"publishConfig": {
