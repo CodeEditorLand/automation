@@ -1,15 +1,15 @@
 {
-	"name": "automation",
-	"description": "Automations that are used across the `tauri-apps` GitHub organization.",
-	"main": "index.js",
-	"scripts": {
-		"Document": "Document 'Source/**/*.ts'",
-		"prepublishOnly": "Build 'Source/**/*.ts'"
-	},
-	"dependencies": {
-		"@actions/github": "6.0.0"
-	},
-	"devDependencies": {
-		"@playform/build": "0.0.7"
-	}
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "Automations that are used across the `tauri-apps` GitHub organization.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/github": "^5.1.1"
+  }
 }
