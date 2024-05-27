@@ -1,0 +1,34 @@
+name: Congrats
+# Adapted from https://github.com/withastro/automation/blob/main/.github/workflows/congratsbot.yml
+
+on:
+  push:
+  workflow_call:
+    secrets:
+      DISCORD_WEBHOOK:
+        description: >
+          URL of a Discord webhook. To create one:
+            1. Find the channel you want to post congrats in.
+            2. Right-click and select “Edit Channel”.
+            3. Navigate to “Integrations” > “View Webhooks”.
+            4. Click “New Webhook” and copy the URL for your newly created webhook.
+        required: true
+
+jobs:
+  post-message:
+    # Prevents running workflow on forks
+    if: ${{ github.repository_owner == 'tauri-apps' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          repository: 'tauri-apps/automation'
+          path: 'automation'
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - name: Send message
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: node automation/congrats.js
