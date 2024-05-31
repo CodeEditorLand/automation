@@ -4,6 +4,6 @@
 	"main": "index.js",
 	"scripts": {},
 	"dependencies": {
-		"@actions/github": "^5.1.1"
+		"@actions/github": "^6.0.0"
 	}
 }
