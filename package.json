@@ -1,5 +1,11 @@
 {
+<<<<<<< HEAD
 	"name": "automation",
+=======
+	"dependencies": {
+		"@actions/github": "6.0.0"
+	},
+>>>>>>> 37a09f03e57cd906eefd758f1648bc3a035801de
 	"description": "Automations that are used across the `tauri-apps` GitHub organization.",
 	"main": "index.js",
 	"scripts": {},
