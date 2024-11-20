@@ -1,9 +1,9 @@
 {
-	"dependencies": {
-		"@actions/github": "6.0.0"
-	},
+	"name": "automation",
 	"description": "Automations that are used across the `tauri-apps` GitHub organization.",
 	"main": "index.js",
-	"name": "automation",
-	"scripts": {}
+	"scripts": {},
+	"dependencies": {
+		"@actions/github": "6.0.0"
+	}
 }
