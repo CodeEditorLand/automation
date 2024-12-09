@@ -3,6 +3,7 @@
 		"@actions/github": "6.0.0"
 	},
 	"description": "Automations that are used across the `tauri-apps` GitHub organization.",
+	"devDependencies": {},
 	"main": "index.js",
 	"name": "automation",
 	"scripts": {}
